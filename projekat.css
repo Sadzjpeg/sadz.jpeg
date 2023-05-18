@@ -1,0 +1,47 @@
+.header {
+    z-index:2;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+  }
+  .content {
+    z-index: 1;
+    padding: 16px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  ul {
+    height: 90px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(179, 137, 115);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 35px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  border-radius: 5px;
+}
+html+body{
+    scroll-behavior: smooth;
+}
